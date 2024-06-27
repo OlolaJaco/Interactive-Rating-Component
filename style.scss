@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+$White: hsl(0, 0%, 100%);
+$Light-grey: hsl(217, 12%, 63%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+$Orange: hsl(25, 97%, 53%);
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $Very-Dark-Blue;
+}
+
+.container {
+    font-family: "Overpass", sans-serif;
+    background-color: $Dark-Blue;
+    height: 50%;
+    width: 350px;
+    padding: 30px; // coming back to adjesu this
+    border-radius: 40px;
+    font-weight: 700;
+    align-content: center;
+    img {
+        box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.75);
+        padding: 20px;
+        border-radius: 50px;
+    }
+
+    h1 {
+        color: $White;
+    }
+
+    p {
+        font-size: 15px;
+        color: $Light-grey;
+        
+    }
+
+    section {
+        display: flex;
+        justify-content: space-around;
+        button {
+            color: $Light-grey;
+            background-color: $Dark-Blue;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 50%;
+            box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.75);
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        button:hover {
+            background-color: $Orange;
+            color: $Very-Dark-Blue;
+        }
+
+        button:focus {
+            background-color: $White;
+            color: $Very-Dark-Blue;
+        }
+    }
+}
+
+#submit {
+    margin-top: 30px;
+    padding: 10px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 2em;
+    border: none;
+    color: $Dark-Blue;
+    cursor: pointer;
+}
+
+//** Thank you after submittion
+
+.container.thanks {
+    text-align: center;
+    align-content: center;
+    display: none;
+    img {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .selection {
+        color: $Orange;
+        box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.75);
+        width: fit-content;
+        margin: auto;
+        padding: 5px 20px;
+        border-radius: 15px;
+        border: none;
+    }
+}
